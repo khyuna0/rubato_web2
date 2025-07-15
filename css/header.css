@@ -1,0 +1,15 @@
+/* 상단 헤더 */
+
+header #main_menu {
+    width: 757px;
+    height: 38px;
+    border: 2px solid red;
+    background-image: url("../img/main_menu_bg.png");
+    background-repeat: no-repeat; /* 배경 이미지 반복 제거 */
+    }
+
+header #main_menu li {
+    display: inline-block; /* 블록 형태로 정렬 - 그냥 inline 마진 적용이 안 될 때*/
+    font-size: 13px;
+    margin: 10px 30px 0 50px;
+}
