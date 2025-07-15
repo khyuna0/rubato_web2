@@ -1,0 +1,117 @@
+/*  글 목록 메인 컨텐츠 */
+
+main {
+    width: 758px;
+    float: right;
+}
+
+main h2#board_title { /* 자유게시판 */
+    border-bottom: 1px solid #bbbbbb;
+    margin-top: 20px;
+    padding: 0 0 5px 5px;
+}
+
+main #total_search {
+    height: 35px;
+    position: relative;
+    /* border: 1px solid red; */
+}
+
+main #total {
+    position: absolute;
+    top: 10px;
+}
+
+main #search {
+    position: absolute;
+    left:450px;
+}
+
+main #search #search_img {
+    position: absolute;
+    top: 9px;
+}
+
+main #search #search_select {    
+    position: absolute;
+    top: 8px;
+    left: 60px;
+}
+
+main #search #search_input {
+    position: absolute;
+    top: 7px;
+    left: 130px;
+}
+
+main #search #search_input input {
+    width: 100px;
+}
+
+main #search #search_btn {
+    position: absolute;
+    top: 6px;
+    left: 240px;
+}
+
+/* 게시판 목록 테이블 */
+
+main table {
+    border-collapse: collapse; /* 테이블 디자인 무조건 적용! */
+    margin: 0 auto;
+    width: 100%; /* 가로에 꽉 차서 나오게 설정함 */
+}
+
+main table tr {
+    height: 30px; /* 게시판 목록 줄 높이 */
+}
+
+/* 중요! */
+
+main table th { 
+    background-color: #eeeeee;
+    border-top: 2px solid #aaaaaa;
+}
+
+main table td { 
+    /* 선 겹치면 boarder-top 삭제 / border-top 제외하고 설정 */
+    /* 이 표는 boarder-bottom 만 설정함 */
+    border-bottom: 1px solid #dddddd;
+}
+
+/* 테이블 클래스 */
+
+main table td.col1 {
+    text-align: center;
+}
+
+main table td.col2 { /* 제목 열 */
+    width: 60%; /* 짤리지 않게 길이 확보용 */
+}
+
+main table td.col3 {
+    text-align: center;
+}
+
+main table td.col4 {
+    text-align: center;
+}
+
+main table td.col5 {
+    text-align: center;
+}   
+
+/* 테이블 클래스 끝 */
+
+main table td a:link { /* 하이퍼링크 기본 표시 */
+    text-decoration: none; /*밑줄 빼기*/
+    color: #444444;
+}
+main table td a:hover { /* 마우스를 올렸을 때 */
+    text-decoration: underline; 
+    color: #444444;
+}
+main table td a:visited { /* 방문한 게시판 */
+    text-decoration: none; /*밑줄 빼기*/
+    color: #444444;
+}
