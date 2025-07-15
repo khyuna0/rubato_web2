@@ -82,6 +82,7 @@ main section#notice_free_youtube {
     position: relative;
     /* border: 1px solid green; */
 }
+/* 큰 컨텐츠 박스 안에서 섹션을 따로 나누어 구분함 */
 
 main section #notice { /* 공지사항 박스 */
     width: 360px;
@@ -123,13 +124,17 @@ main section .latest_content div.date {
     float: right;
 }
 
-main section #free { /* 자유게시판 박스 */
+/* 자유게시판 박스 */
+
+main section #free { 
     width: 360px;
     /* border: 1px solid red;  */
     margin-top: 10px;
     position: absolute;
     top: 120px;
 }
+
+/* 유튜브 박스 */
 
 main section #youtube { 
     width: 365px;
