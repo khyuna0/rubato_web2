@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/common.css">
     <link rel="stylesheet" type="text/css" href="css/header.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/main.css"> -->
     <link rel="stylesheet" type="text/css" href="css/boardlist_aside.css">
     <link rel="stylesheet" type="text/css" href="css/boardlist_main.css">
+    <link rel="stylesheet" type="text/css" href="css/board_view.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css">
     
     <title>클래식 기타 커뮤니티</title>
@@ -78,80 +79,36 @@
         <main>
             <img src="images/comm.gif"> <!--main 이미지-->
 
-            <h2 id="board_title">자유 게시판</h2>
+            <h2 id="board_title">자유게시판</h2>
 
-            <div id="total_search"> <!-- total search -->
+            <!-- 자유게시판 요소 -->
 
-                <div id="total">◁ 총 3개의 게시물이 있습니다.</div>
+            <div id="view_title_box"> <!--자유게시판 제목-->
+                <span>까스통님의 선물인 보드카가...</span>
+                <span id="info">루바토 | 조회 : 1 | 2025-07-15 (09:20)</span>
+            </div>
+            <div id="view_content"> <!--자유게시판 내용-->
+                까스통님 고맙습니다. <br>
+                까스통님 고맙습니다. <br>
+                까스통님 고맙습니다. <br>
+                까스통님 고맙습니다. <br>
+                까스통님 고맙습니다. <br>
+            </div>
+
+            <div id="comment_box"> <!-- 댓글 -->
+                <img id="title_comment" src="images/title_comment.gif">
+                <textarea></textarea>
+                <img id="ok_ripple" src="images/ok_ripple.gif">
                 
-                <div id="search">
-
-                    <div id="search_img"> <!-- 검색 버튼 -->
-                        <img src="images/select_search.gif">
-                    </div>
-
-                    <div id="search_select"> <!-- select div -->
-                        <select>
-                            <option>제목</option>
-                            <option>내용</option>
-                            <option>글쓴이</option>
-                        </select> 
-                    </div> <!-- select div 끝-->
-
-                    <div id="search_input"> <!--검색창 영역-->
-                        <input type="text">
-                    </div> <!--검색창 영역 끝-->
-
-                    <div id="search_btn"> <!--검색 버튼-->
-                        <img src="images/search_button.gif">
-                    </div> <!--검색 버튼 끝-->
-
-                </div> 
-
-            </div> <!-- total search 끝-->
-
-            <table> <!-- 게시판 글 목록 테이블 -->
-                <tr>
-                    <th>번호</th> <!-- 처음 행 굵은 글씨로 강조 -->
-                    <th>제목</th> 
-                    <th>글쓴이</th>
-                    <th>일시</th>
-                    <th>조회수</th>
-                </tr>
-                <tr>
-                    <td class="col1">1</td>
-                    <td class="col2"><a href="board_view.html">까스롱님의 선물인 보드카...</a></td>
-                    <td class="col3">루바토</td>
-                    <td class="col4">2025-07-15</td>
-                    <td class="col5">1</td>
-                </tr>
-                <tr>
-                    <td class="col1">2</td>
-                    <td class="col2"><a href="board_view.html">까스롱님의 선물인 보드카...</a></td>
-                    <td class="col3">루바토</td>
-                    <td class="col4">2025-07-15</td>
-                    <td class="col5">2</td>
-                </tr>
-                <tr>
-                    <td class="col1">3</td>
-                    <td class="col2"><a href="board_view.html">까스롱님의 선물인 보드카...</a></td>
-                    <td class="col3">루바토</td>
-                    <td class="col4">2025-07-15</td>
-                    <td class="col5">3</td>
-                </tr>
-            </table> <!--게시판 글 목록 끝-->
-
-            <div id="buttons"> 
-                <div class="buttons_col1">
-                    ◀ 이전 1 다음 ▶
-                </div>
-
-                <div class="buttons_col2">
-                    <img src="images/list.png">
-                    <a href="#"><img src="images/write.png"></a>
-                </div>
 
             </div>
+            <div id="buttons">
+
+                <a href="#"><img src="images/delete.png"></a>
+                <a href="board_list.html"><img src="images/list.png"></a>
+                <a href="#"><img src="images/write.png"></a>
+            </div>
+            <!-- 자유게시판 요소 끝 -->
 
         </main>
         <div class="clear"></div>
