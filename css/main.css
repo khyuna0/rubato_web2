@@ -1,5 +1,7 @@
 /* 왼쪽 aside 콘텐츠 */
 
+/* 로그인 박스 */
+
 aside { 
     width: 190px;
 }
@@ -40,5 +42,36 @@ aside #login_input li {
 }
 
 aside #join_search {
-    margin: 10px 0 0 5px;
+    margin: 8px 0 0 5px;
 }
+
+/* 방명록 (guestbook) */
+
+aside #guestbook {
+    width: 183px;
+    height: 135px;
+    border: 1px solid #dddddd;
+    border-radius: 10px; 
+    background-color: #eeeeee;
+    margin-top: 15px;
+    box-shadow: 2px 5px #dddddd;
+    padding: 10px 0 0 5px;
+}
+
+aside #guestbook li {
+    list-style-image: url("../img/icon_blue.gif");
+    margin-top: 5px;
+}
+
+aside #guestbook_title {
+    /* width: 165px; 오류 */
+    border-bottom: 1px solid #cccccc;
+    margin-left: 8px;
+}
+
+aside #guestbook ul {
+    margin: 10px 0 0 40px;
+}
+
+/* main */
+
