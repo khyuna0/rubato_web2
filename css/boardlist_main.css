@@ -117,7 +117,7 @@ main table td a:visited { /* 방문한 게시판 */
     color: #444444;
 }
 
-/* 메인 마지막 부분 */
+/* 게시판 목록 하단 이동, 목록, 글쓰기 부분 */
 
 main #buttons {
     margin-top: 20px;
