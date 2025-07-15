@@ -21,7 +21,13 @@ ul {
 
 #wrap {
     width: 970px;
+    height: 900px;
     margin: 0  auto; /* 가운데 정렬 */
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 
+header {
+ /* border: 2px solid green;   */
+ position: relative; /* 상위에 relative 설정 - 설정한 것 기준으로 포지션 설정 */
+ height: 100px; 
+}

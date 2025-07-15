@@ -3,13 +3,49 @@
 header #main_menu {
     width: 757px;
     height: 38px;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     background-image: url("../img/main_menu_bg.png");
     background-repeat: no-repeat; /* 배경 이미지 반복 제거 */
-    }
+    position: absolute;
+    top: 40px;
+    left: 200px;
+}
 
 header #main_menu li {
     display: inline-block; /* 블록 형태로 정렬 - 그냥 inline 마진 적용이 안 될 때*/
     font-size: 13px;
     margin: 10px 30px 0 50px;
 }
+
+header #logo {
+    position: absolute; /* 하위 포지션 - absloute */
+    top: 10px;
+    left: 20px; /* 왼쪽 위에 지정한 크기만큼 박스가 생긴다고 생각*/
+}
+
+header #top_menu { 
+    position: absolute;
+    top: 10px;
+    left: 770px;
+}
+
+/* 하이퍼링크 범위 지정 필수 */
+
+header #main_menu a:link {
+    text-decoration: none; /* 하이퍼링크 적용된 텍스트의 밑줄 삭제 */
+    color: white
+}
+
+header #main_menu a:visited { 
+    text-decoration: none; /* 하이퍼링크 적용된 텍스트의 밑줄 출력 */
+    color: white
+}
+
+header #main_menu a:hover {
+    text-decoration: none; /* 하이퍼링크 적용된 텍스트의 방문 밑줄 삭제 */
+    color: white
+}
+
+
+
+ 

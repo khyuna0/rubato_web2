@@ -1,0 +1,44 @@
+/* 왼쪽 aside 콘텐츠 */
+
+aside { 
+    width: 190px;
+}
+
+aside #login_box {
+    width: 186px;
+    height: 120px;
+    border: 1px solid #dddddd;
+    border-radius: 10px; 
+    background-color: #f3f3f3;
+}
+
+ aside #login_title {
+    margin: 10px 0 0 10px; /* 마진 설정 - 시계방향 */
+} 
+
+aside #input_button{
+    margin: 10px 0 0 10px;
+}
+
+aside #login_input input{
+    width: 100px;
+    height: 20px;
+    border: 1px solid #dddddd;
+}
+
+aside #login_input {
+    float: left;
+}
+
+aside #login_btn {
+    float: left;
+    margin : 3px 0 0 5px;
+}
+
+aside #login_input li {
+    margin: 2px 0 0 0;
+}
+
+aside #join_search {
+    margin: 10px 0 0 5px;
+}
