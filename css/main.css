@@ -1,28 +1,26 @@
 /* 왼쪽 aside 콘텐츠 */
-
-/* 로그인 박스 */
-
-aside { 
+aside {
     width: 190px;
+    float: left;
 }
 
 aside #login_box {
     width: 186px;
     height: 120px;
     border: 1px solid #dddddd;
-    border-radius: 10px; 
+    border-radius: 10px;
     background-color: #f3f3f3;
 }
 
- aside #login_title {
-    margin: 10px 0 0 10px; /* 마진 설정 - 시계방향 */
-} 
-
-aside #input_button{
+aside #login_title {
     margin: 10px 0 0 10px;
 }
 
-aside #login_input input{
+aside #input_button {
+    margin: 10px 0 0 10px;
+}
+
+aside #login_input input {
     width: 100px;
     height: 20px;
     border: 1px solid #dddddd;
@@ -34,7 +32,7 @@ aside #login_input {
 
 aside #login_btn {
     float: left;
-    margin : 3px 0 0 5px;
+    margin: 3px 0 0 5px;
 }
 
 aside #login_input li {
@@ -42,29 +40,27 @@ aside #login_input li {
 }
 
 aside #join_search {
-    margin: 8px 0 0 5px;
+    margin: 10px 0 0 5px;
 }
-
-/* 방명록 (guestbook) */
 
 aside #guestbook {
     width: 183px;
     height: 135px;
     border: 1px solid #dddddd;
-    border-radius: 10px; 
     background-color: #eeeeee;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #dddddd;
     margin-top: 15px;
-    box-shadow: 2px 5px #dddddd;
     padding: 10px 0 0 5px;
 }
 
 aside #guestbook li {
-    list-style-image: url("../img/icon_blue.gif");
+    list-style-image: url("../images/icon_blue.gif");
     margin-top: 5px;
 }
 
 aside #guestbook_title {
-    /* width: 165px; 오류 */
+    width: 165px;
     border-bottom: 1px solid #cccccc;
     margin-left: 8px;
 }
@@ -73,5 +69,97 @@ aside #guestbook ul {
     margin: 10px 0 0 40px;
 }
 
-/* main */
+/* main 콘텐츠 */
+main {
+    width: 758px;
+    float: right;
+}
 
+/* 공지사항, 자유게시판, 유튜브를 포함하는 컨텐츠 박스 */
+main section#notice_free_youtube { 
+    height: 250px;
+    margin-top: 10px;
+    position: relative;
+    /* border: 1px solid green; */
+}
+
+main section #notice { /* 공지사항 박스 */
+    width: 360px;
+    position: absolute;
+    /* border: 1px solid red;     */
+}
+
+main section .latest_title img.latest_img {
+    float: left;
+}
+
+main section .latest_title {
+    border-bottom: 1px solid #cccccc;
+    padding: 0 0 3px 0;
+}
+
+main section .latest_title img.more {
+    float: right;
+}
+
+main section .latest_content img.pen_image {
+    float: left;
+    margin: 10px 0 0 20px;
+}
+
+main section .latest_content ul.latest_list {
+    float: right;
+}
+
+main section .latest_content ul li {
+   padding: 0px 0 10px 0 
+}
+main section .latest_content div.subject {
+    float: left;
+    width: 170px;
+}
+
+main section .latest_content div.date {
+    float: right;
+}
+
+main section #free { /* 자유게시판 박스 */
+    width: 360px;
+    /* border: 1px solid red;  */
+    margin-top: 10px;
+    position: absolute;
+    top: 120px;
+}
+
+main section #youtube { 
+    width: 365px;
+    height: 250px;
+    position: absolute;
+    left: 380px;
+}
+
+main section #youtube_bach {
+    margin: 10px 0 0 45px;
+}
+
+/* 포토 갤러리 */
+
+
+main section #gallery_box {
+    width: 749px;
+    height: 210px;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #dddddd;
+    margin: 10px 0 0 5px;
+}
+
+main section #gallery_list {
+    padding: 25px 0 0 18px;
+}
+
+main section .items {
+    float: left;
+    text-align: center;
+    margin: 10px 0 0 35px;
+}

@@ -1,98 +1,194 @@
-<!DOCTYPE html> <!-- index.html - 첫 페이지 자동으로 지정하는 이름 -->
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" type="text/css" href="css/common.css"> 
-    <link rel="stylesheet" type="text/css" href="css/header.css"> 
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="css/footer.css"> 
-
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
     <title>클래식 기타 커뮤니티</title>
-
 </head>
-
 <body>
     <div id="wrap">
-
         <header>
-            <img id ="logo" src="img/logo.png">
-
+            <img id="logo" src="images/logo.png">
             <nav id="top_menu">
                 HOME  |  LOGIN  |  JOIN  |  NOTICE
             </nav>
-
             <nav id="main_menu">
                 <ul>
-                    <li><a href="#">자유 게시판</a></li>
-                    <li><a href="#"> 기타 연주</a></li>
-                    <li><a href="#"> 공동 구매</a></li>
-                    <li><a href="#"> 연주회 안내</a></li>
-                    <li><a href="#"> 회원 게시판</a></li>
+                    <li><a href="#">자유게시판</a></li>
+                    <li><a href="#">기타 연주</a></li>
+                    <li><a href="#">공동 구매</a></li>
+                    <li><a href="#">연주회 안내</a></li>
+                    <li><a href="#">회원 게시판</a></li>
                 </ul>
-                
             </nav>
-
         </header>
 
         <aside>
-
-            <article id="login_box">    
-                <img id="login_title" src="img/ttl_login.png">
-                <div id="input_button">     <!-- 로그인 영역 박스 -->
-
-                <form> <!-- input type form 으로 묶어야 작동함-->
-                    <ul id="login_input">
-                        <li><input type="text"></li>
-                        <li><input type="password"></li>
-                    </ul>
-                    <input id="login_btn" type="image" src="img/btn_login.gif"> <!-- (로그인 버튼) 이미지를 버튼으로 설정함 -->
-                </form>
-
+            <article id="login_box">
+                <img id="login_title" src="images/ttl_login.png">
+                <div id="input_button">
+                    <form>
+                        <ul id="login_input">
+                            <li><input type="text"></li>
+                            <li><input type="password"></li>
+                        </ul>
+                        <input id="login_btn" type="image" src="images/btn_login.gif">
+                    </form>
                 </div>
-                
-                <div class="clear"></div> <!-- float 적용 후 clear 꼭 넣어주기 -->
-
-                <div id="join_search"> <!-- 회원가입 영역 박스 -->
-                    <img src="img/btn_join.gif">
-                    <img src="img/btn_search.gif">
+                <div class="clear"></div>
+                <div id="join_search">
+                    <img src="images/btn_join.gif">
+                    <img src="images/btn_search.gif">
                 </div>
-
             </article>
-            
-            <article id="guestbook"> <!-- 방명록 -->
-
-                <div>
-                    <img id="guestbook_title" src="img/ttl_memo.gif">
-
-                    <ul>
-                        <li>안녕하세요!</li>
-                        <li>안녕하세요!</li>
-                        <li>안녕하세요!</li>
-                        <li>안녕하세요!</li>
-                    </ul>
-
+            <article id="guestbook">
+                <div id="guestbook_title">
+                    <img src="images/ttl_memo.gif">
                 </div>
+                <ul>
+                    <li>안녕하세요!</li>
+                    <li>안녕하세요!</li>
+                    <li>안녕하세요!</li>
+                    <li>안녕하세요!</li>
+                </ul>
             </article>
         </aside>
 
         <main>
-            <section>
+            <img src="images/main_img.png">
+            <section id="notice_free_youtube">
+                <article id="notice"> <!-- 공지사항 -->
+                    <div class="latest_title">
+                        <img class="latest_img" src="images/latest1.gif">
+                        <img class="more" src="images/more.gif">
+                        <div class="clear"></div>
+                    </div>
+                    <div class="latest_content">
+                        <img class="pen_image" src="images/book_pen.gif">
+                        <ul class="latest_list">
+                            <li>
+                                <div class="subject">루바토 개편과 사이트 이용...</div>
+                                <div class="date">2025-07-15</div>
+                                <div class="clear"></div>
+                            </li>
+                            <li>
+                                <div class="subject">루바토 개편과 사이트 이용...</div>
+                                <div class="date">2025-07-15</div>
+                                <div class="clear"></div>
+                            </li>
+                            <li>
+                                <div class="subject">루바토 개편과 사이트 이용...</div>
+                                <div class="date">2025-07-15</div>
+                                <div class="clear"></div>
+                            </li>
+                            <li>
+                                <div class="subject">루바토 개편과 사이트 이용...</div>
+                                <div class="date">2025-07-15</div>
+                                <div class="clear"></div> <!-- 플로트 끝나는 시점에 clear 필수 - 마진 적용이 안됨!! -->
+                            </li>
+                        </ul>
+                    </div>
+                </article>
 
+
+                <article id="free"> <!-- 자유게시판 -->
+
+                    <div class="latest_title">
+                        <img class="latest_img" src="images/latest2.gif">
+                        <img class="more" src="images/more.gif">
+                        <div class="clear"></div>
+                    </div>
+                    <div class="latest_content">
+                        <img class="pen_image" src="images/book_pen.gif">
+                        <ul class="latest_list">
+                            <li>
+                                <div class="subject">까스통님의 선물인 보드카...</div>
+                                <div class="date">2025-07-15</div>
+                                <div class="clear"></div>
+                            </li>
+                            <li>
+                                <div class="subject">까스통님의 선물인 보드카...</div>
+                                <div class="date">2025-07-15</div>
+                                <div class="clear"></div>
+                            </li>
+                            <li>
+                                <div class="subject">까스통님의 선물인 보드카...</div>
+                                <div class="date">2025-07-15</div>
+                                <div class="clear"></div>
+                            </li>
+                            <li>
+                                <div class="subject">까스통님의 선물인 보드카...</div>
+                                <div class="date">2025-07-15</div>
+                                <div class="clear"></div>
+                            </li>
+                        </ul>
+
+                    </div>
+                </article>
+
+                <article id="youtube"> <!-- youtube -->
+                    
+                    <div class="latest_title">
+                        <img class="latest_img" src="images/latest3.gif">
+                        <img class="more" src="images/more.gif">
+                        <div class="clear"></div>
+                    </div>
+                    <img id="youtube_bach" src="images/bach.jpg">
+
+                </article>
             </section>
 
-            <section>
-
+            <section id="gallery"> <!-- 포토갤러리 -->
+                <img src="images/latest4.gif">
+                <div id="gallery_box">
+                    <div id="gallery_list">
+                        <div class="items">
+                            <ul>
+                                <li>
+                                    <img src="images/img1.jpg">
+                                </li>
+                                <li>기타 페스티벌 4중주</li>
+                            </ul>
+                        </div>
+                          <div class="items">
+                            <ul>
+                                <li>
+                                    <img src="images/img1.jpg">
+                                </li>
+                                <li>기타 페스티벌 4중주</li>
+                            </ul>
+                        </div>
+                          <div class="items">
+                            <ul>
+                                <li>
+                                    <img src="images/img1.jpg">
+                                </li>
+                                <li>기타 페스티벌 4중주</li>
+                            </ul>
+                        </div>
+                    </div>  <!--gallery_list 끝-->
+                </div>  <!-- gallery_box 끝 -->
             </section>
+            
         </main>
-
+        <div class="clear"></div>
         <footer>
-
+            <img id="footer_logo" src="images/footer_logo.gif">
+            <ul id="address">
+                <li> 서울시 강남구 삼성동 1234 우 : 123 -1234 </li>
+                <li> TEL : 02-123-1234 Email : email@domain.com</li>
+                <li>copyright &copy; 루바토 ALL Rights Reserved </li>
+            </ul>
+            <ul id="footer_sns">
+                <li><img src="images/facebook.gif"></li>
+                <li><img src="images/blog.gif"></li>
+                <li><img src="images/twitter.gif"></li>
+            </ul>
         </footer>
-
     </div>
-
 </body>
-
 </html>
